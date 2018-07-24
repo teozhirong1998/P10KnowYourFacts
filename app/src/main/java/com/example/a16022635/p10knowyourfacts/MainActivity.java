@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         al.add(new Frag1());
         al.add(new Frag2());
         al.add(new Frag3());
+        al.add(new Frag4());
 
         adapter = new MyFragmentPagerAdapter(fm, al);
 
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_random:
 
                 Random random = new Random();
-                vPager.setCurrentItem(random.nextInt(3), true);
+                vPager.setCurrentItem(random.nextInt(4), true);
 
                 return true;
 
